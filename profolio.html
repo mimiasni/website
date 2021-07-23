@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Feven Asnake</title>
+       <!-- <link rel="stylesheet" href="styles.css">-->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6f35287597.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul class="nav-links">
+                <div class="nav-linkwrap">
+                    <li><a href="index.html">Home</a></div></li>
+                </div>
+            
+                <div class="nav-linkwrap">
+                    <li><a href="aboutme.html">About me</a></li>
+                </div>
+                <div class="nav-linkwrap">
+                    <li><a href="profolio.html">profolio</a></div></li>
+                </div>
+            </ul>
+            <div class="brand">
+            <h4>Feven Asnake</h4>
+            </div>
+        </nav>
+        <div class="page-wrap">
+            <div class ="content-wrap">
+                <div class="profolio-itemswrap">
+                    <div class="profolio-itemwrap">
+                        <div class="profolio-backgroungimg" style="background-image: url(front.jpg);"></div>
+                        <div class="img-textwrap">
+                            <div class="subtitle">
+                                     Front-end development is my specialty now.<br>Since I have so much fun doing it.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profolio-itemwrap">
+                        <div class="profolio-backgroungimg" style="background-image: url(programing.jpg);"></div>
+                        <div class="img-textwrap">
+                            <div class="subtitle">
+                                    I can write in many high level programing language like : python,C++,Java...
+                            </div> 
+                        </div>
+                    </div>    
+                    <div class="profolio-itemwrap">
+                        <div class="profolio-backgroungimg" style="background-image: url(Video.jpg);"></div>
+                        <div class="img-textwrap">
+                            <div class="subtitle">
+                                   Since I have my own youtube channel .<br>I edit my own videos and I am very well at it now.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profolio-itemwrap">
+                        <div class="profolio-backgroungimg" style="background-image: url(han.jpg);"></div>
+                        <div class="img-textwrap">
+                            <div class="subtitle">
+                                    I can also speak a bit of Korean language since I like watching K drama.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profolio-itemwrap">
+                        <div class="profolio-backgroungimg" style="background-image: url(graph.jpg);"></div>
+                        <div class="img-textwrap">
+                            <div class="subtitle">
+                                  It's  a big dream of mine to become a well known Graophic Desginer.<br>I getting more experance at it by the day.   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profolio-itemwrap">
+                        <div class="profolio-backgroungimg" style="background-image: url(game.jpg);"></div>
+                        <div class="img-textwrap">
+                            <div class="subtitle">
+                                    I like to see myself as a Pro Gamer since I lave playing video Games alot.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="name">Feven<span>Asnake</span></h1>
+                    <p>To contant me here are my contants and socials.</p>
+                    <div class="contant">
+                        <span><i class="fa fa-phone-square" aria-hidden="true">&nbsp; 251-9673-624-66</i></span>
+                        <span><a> <i class= "fas fa-envelope"></i>&nbsp;Email :fevenasnake36@gmail.com</a></span>
+                    </div>
+                    <div class="social">
+                        <a><span><i class= "fa fa-telegram"></i></a></span>
+                        <a><span> <i class= "fa fa-instagram"></i></a></span>
+                        <a><span> <i class= "fa fa-youtube"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="footer-section link">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul class ="footer-wrap">
+                        <div class="footer-linkwrap">
+                            <li><a href="index.html">Home</a></li>
+                        </div>
+                    
+                        <div class="footer-linkwrap">
+                            <li><a href="aboutme.html">About me</a></li>
+                        <div class="footer-linkwrap">
+                            <li><a href="profolio.html">profolio</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer-section contant">
+                    <h2>Contant US</h2>
+                    <br>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contants-input" placeholder="your address here..."><br>
+                        <textarea name="message" class="text-input contant-input" placeholder="your message here..."></textarea><br>
+                        <button type="submit" class="btn btn-big">send</button>
+                        <i class="fas fa-envelope"></i>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                &copy;fevenasnake.com;|Designed by Feven Asnake
+            </div>
+
+            
+        </div>
+     </body>
+     <script>
+         const profolioItem = document.querySelectorAll('.profolio-itemwrap')
+         profolioItem.forEach(profolioItem=>{
+            profolioItem.addEventListener('mouseover' ,() =>{
+                (profolioItem.childNodes[1].classList.add('img-darken'));
+            })
+            profolioItem.addEventListener('mouseout' ,() =>{
+                (profolioItem.childNodes[1].classList.remove('img-darken'));
+            })
+         })
+     </script>
+</html>
